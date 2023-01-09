@@ -60,9 +60,10 @@ function generateQuote() {
     } else {
         quoteText.classList.remove('long-quote')
     }
+
     quoteText.textContent = apiQuotes.text
     complete()
-    } )(quotesArray)
+    } )(quotesArray)  
     
 }
 
@@ -81,5 +82,3 @@ twitterBtn.addEventListener('click', tweetQuote)
 
 //onLoad
 getApiQuotes()
-
-
